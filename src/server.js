@@ -39,6 +39,15 @@ app.get('/health', (req, res) => {
     });
 });
 
+// Root route
+app.get('/', (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: 'Welcome to Easy Bus Ticket API',
+        documentation: '/api-docs', // Optional if you have docs
+    });
+});
+
 // API routes
 console.log('Mounting auth routes at /api/auth');
 app.use('/api/auth', (req, res, next) => {
