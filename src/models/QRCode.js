@@ -44,8 +44,6 @@ const qrCodeSchema = new mongoose.Schema({
 });
 
 // Index for efficient querying
-qrCodeSchema.index({ ticketId: 1 });
-qrCodeSchema.index({ qrData: 1 });
 qrCodeSchema.index({ expiresAt: 1 });
 
 // Method to check if QR code is expired
