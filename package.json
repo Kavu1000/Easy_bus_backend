@@ -2,10 +2,13 @@
   "name": "bus-ticket-backend",
   "version": "1.0.0",
   "description": "Bus ticket booking system REST API with MongoDB",
+  "homepage": "https://Kavu1000.github.io/Easy_bus_backend",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
+    "build": "echo 'No build step required for backend'",
+    "deploy": "echo 'To deploy, simply run: git push origin main'",
     "test": "jest --coverage"
   },
   "keywords": [
